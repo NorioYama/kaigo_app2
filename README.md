@@ -1,24 +1,65 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+# アプリケーション名
+kaigo_app2
+# アプリケーション概要
+自宅で介護を必要としている人、介護をする人のための、健康管理アプリケーション
 
-* Ruby version
+# URL
+※	デプロイ済みのURLを記載。デプロイが済んでいない場合は、デプロイが完了次第記載する。
 
-* System dependencies
+# テスト用アカウント	
+ログイン機能等を実装した場合は、ログインに必要な情報を記載。またBasic認証等を設けている場合は、そのID/Passも記載すること。
 
-* Configuration
+# 利用方法	
 
-* Database creation
+## 利用者の記録の入力
+1.ログインページ（ヘッダー）からユーザー新規登録を行う。
+2.利用者の登録を行う。（顔写真、名前、性別、介護度）
+3.投稿フォームから、その日の体温、血圧、食事量など健康情報の入力をする。
+4.詳細ページにて利用者のその日の記録の一覧が表示される。
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
+# アプリケーションを作成した背景	
+介護を必要としている人の自身の健康管理、その家族向けの健康管理アプリです。介護に必要な人は突然健康上の問題が発生する可能性が高いので日頃から健康上の情報を登録しておけば、問題を素早く発見するための手助けとなります。健康管理からアプリから医療機関や介護事業所に適切な健康情報提供を行い、適切な対応ができるのではないかと思いました。またこのような健康管理アプリは、医療機関や介護事業者向けのアプリケーションは開発されていますが、個人向けのアプリケーションは、ほとんど開発されていないのが実情です。介護費が国の財政を圧迫しており、2025年問題と言われる団塊の世代が75歳以上になり、より高齢者社会となることが予測されます。自宅で介護をせざるを得ない状況も増えると考えられます。そんなか、この健康管理アプリが自宅での介護の手助けになるのではないかと考えました。
 
-* Deployment instructions
+# 洗い出した要件	
+要件定義のスプレッドシート
+https://docs.google.com/spreadsheets/d/1NVp9av6LWfgMNYPPs-wr4SOpv021ZRbkljlSVPkD4hk/edit#gid=982722306
 
-* ...
+実装した機能についての画像やGIFおよびその説明※	実装した機能について、それぞれどのような特徴があるのかを列挙する形で記載。画像はGyazoで、GIFはGyazoGIFで撮影すること。
+
+
+# 実装予定の機能	
+洗い出した要件の中から、今後実装予定の機能がある場合は、その機能を記載。
+
+# データベース設計
+[![Image from Gyazo](https://i.gyazo.com/57e6bd69342de7b29f34813b69e49a12.png)](https://gyazo.com/57e6bd69342de7b29f34813b69e49a12)
+
+# 画面遷移図
+[![Image from Gyazo](https://i.gyazo.com/bbdc078d0c3d4d1385ac634089e7520d.png)](https://gyazo.com/bbdc078d0c3d4d1385ac634089e7520d)
+
+# 開発環境	
+・フロントエンド
+・バックエンド
+・インフラ
+・テスト
+・テキストエディタ
+・タスク管理
+
+# ローカルでの動作方法
+
+※	git cloneしてから、ローカルで動作をさせるまでに必要なコマンドを記載。
+
+% git clone https://github.com/NorioYama/kaigo_app2
+
+% cd kaigo_app２
+
+% bundle install
+
+% yarn install
+
+# 工夫したポイント
+※	制作背景・使用技術・開発方法・タスク管理など、企業へＰＲしたい事柄を記載。
