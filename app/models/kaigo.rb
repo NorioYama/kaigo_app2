@@ -1,0 +1,2 @@
+class Kaigo < ApplicationRecord
+end
