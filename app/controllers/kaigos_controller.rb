@@ -1,0 +1,2 @@
+class KaigosController < ApplicationController
+end

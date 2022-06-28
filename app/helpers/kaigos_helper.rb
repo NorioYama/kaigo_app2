@@ -1,0 +1,2 @@
+module KaigosHelper
+end
