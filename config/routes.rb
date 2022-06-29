@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_scope :user do #手動サインアウト用
+    get '/users/sign_out' => 'devise/sessions#destroy'
+  end      
+
+  root to: 'kaigos#index'
+  resources :kaigos, only: :index
 end
