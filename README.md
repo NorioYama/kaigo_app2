@@ -60,7 +60,7 @@ https://docs.google.com/spreadsheets/d/1NVp9av6LWfgMNYPPs-wr4SOpv021ZRbkljlSVPkD
 
 % cd kaigo_app２
 
-% rbenv exec gem install bundler 
+% bundle install
 
 % yarn install
 
