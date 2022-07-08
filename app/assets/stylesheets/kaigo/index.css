@@ -1,0 +1,26 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  }
+  
+body{
+  background-color:#eaf6fd
+}
+
+.head{
+}
+
+.wellcom{
+}
+
+.form{
+}
+.contents-main{
+}
+
+td, th {
+   border: 1px #808080 solid; 
+   width: 5%;
+   height: 50px;
+   
+  }
