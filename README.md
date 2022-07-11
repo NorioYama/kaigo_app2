@@ -7,18 +7,20 @@ kaigo_app2
 自宅で介護を必要としている人、介護をする人のための、健康管理アプリケーション
 
 # URL
-※	デプロイ済みのURLを記載。デプロイが済んでいない場合は、デプロイが完了次第記載する。
+https://kaigo-app2.herokuapp.com/
 
 # テスト用アカウント	
-ログイン機能等を実装した場合は、ログインに必要な情報を記載。またBasic認証等を設けている場合は、そのID/Passも記載すること。
+Basic認証
+ID admin
+Pass 2222
 
 # 利用方法	
 
 ## 利用者の記録の入力
 1.ログインページ（ヘッダー）からユーザー新規登録を行う。
-2.利用者の登録を行う。（顔写真、名前、性別、介護度）
+2.利用者の登録を行う。（名前、メールアドレス、生年月日、性別、介護度）
 3.投稿フォームから、その日の体温、血圧、食事量など健康情報の入力をする。
-4.詳細ページにて利用者のその日の記録の一覧が表示される。
+4.一覧ページに1週間分の健康情報が表示され、入力した情報が反映される。
 
 
 
@@ -31,12 +33,6 @@ kaigo_app2
 # 洗い出した要件	
 要件定義のスプレッドシート
 https://docs.google.com/spreadsheets/d/1NVp9av6LWfgMNYPPs-wr4SOpv021ZRbkljlSVPkD4hk/edit#gid=982722306
-
-実装した機能についての画像やGIFおよびその説明※	実装した機能について、それぞれどのような特徴があるのかを列挙する形で記載。画像はGyazoで、GIFはGyazoGIFで撮影すること。
-
-
-# 実装予定の機能	
-洗い出した要件の中から、今後実装予定の機能がある場合は、その機能を記載。
 
 # データベース設計
 [![Image from Gyazo](https://i.gyazo.com/0ad333175f67bcbc3f9aaf1b00a30912.png)](https://gyazo.com/0ad333175f67bcbc3f9aaf1b00a30912)
@@ -63,6 +59,3 @@ https://docs.google.com/spreadsheets/d/1NVp9av6LWfgMNYPPs-wr4SOpv021ZRbkljlSVPkD
 % rbenv exec gem install bundler 
 
 % yarn install
-
-# 工夫したポイント
-※	制作背景・使用技術・開発方法・タスク管理など、企業へＰＲしたい事柄を記載。
