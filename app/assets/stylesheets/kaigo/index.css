@@ -8,6 +8,8 @@ body{
 }
 
 .head{
+  display: flex;
+  justify-content: space-between;
 }
 
 .wellcom{
