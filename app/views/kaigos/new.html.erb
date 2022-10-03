@@ -1,0 +1,43 @@
+<%= form_with model: @kaigo, url:kaigos_path, local: true do |f| %>
+<div class="form-wrap">
+  <div class="form-heder">
+    <h1 class="form-header-text">
+     日々の記録の入力
+    </h1>
+  </div>
+
+  <%# エラーメッセージ%>
+  <div class="form-group">
+    <div class="form-text-wrap">
+      <label class="form-text">日付</label>
+      <%= f.date_field :date, class: "form-calender" %>
+      <span class="indispensable">必須</span>
+    </div>
+    <div class="form-text-wrap">
+      <label class="form-text">体温</label>
+      <%= f.collection_select(:kt_id, Kt.all, :id, :name,{}, {class:"from-kt"})%>
+    </div>
+    <div class="form-text-wrap"> 
+      <div class="form-wrap">
+        <label class="form-text=wrap">最高血圧</label>
+        <%=f.text_field :bp1, class:"form-bp1" %>
+        <label class="form-text=wrap">最低血圧</label>
+        <%=f.text_field :bp2, class:"form-bp2" %>
+      </div>
+    </div>
+    <div class="form-text-wrap">
+      <div class="form-wrap">
+        <label class="form-text-wra">脈拍</label>
+        <%=f.text_field :pulse, class:"form-pulse" %>
+      </div>
+    </div>
+    <div class="form-text-wrap">
+      <div class="form-wrap">
+        <label class="form-text">朝食量</label>
+      </div>
+    </div>
+    <>
+
+  </div>
+</div>
+<% end %>

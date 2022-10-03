@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   end      
 
   root to: 'kaigos#index'
-  resources :kaigos, only: :index
+  resources :kaigos, only: [:index, :new, :create]
 end
